@@ -1,9 +1,13 @@
 <Project>
-  <PropertyGroup>
-    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageVersion Include="Toarnbeike.Results" Version="1.0.2" />
-    <PackageVersion Include="Toarnbeike.Unions" Version="1.2.0" />
-  </ItemGroup>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup Label="Toarnbeike">
+		<PackageVersion Include="Toarnbeike.Results" Version="1.0.2" />
+		<PackageVersion Include="Toarnbeike.Unions" Version="1.2.0" />
+	</ItemGroup>
+	<ItemGroup Label="Testsuite">
+		<PackageVersion Include="Shouldly" Version="4.3.0" />
+		<PackageVersion Include="TUnit" Version="1.5.70" />
+	</ItemGroup>
 </Project>

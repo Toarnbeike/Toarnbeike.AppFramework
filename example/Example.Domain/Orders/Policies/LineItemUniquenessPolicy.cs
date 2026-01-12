@@ -7,7 +7,7 @@ namespace Toarnbeike.Example.Domain.Orders.Policies;
 /// <summary>
 /// Represents a domain policy that enforces uniqueness of a line items within an order based on SKU.
 /// </summary>
-public sealed class LineItemUniquenessPolicy : IDomainPolicy<Order>
+internal sealed class LineItemUniquenessPolicy : IDomainPolicy<Order>
 {
     public Result Evaluate(Order candidate)
     {

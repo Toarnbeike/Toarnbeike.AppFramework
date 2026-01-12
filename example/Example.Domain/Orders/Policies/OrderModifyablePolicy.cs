@@ -5,7 +5,7 @@ namespace Toarnbeike.Example.Domain.Orders.Policies;
 /// <summary>
 /// Represents a domain policy that determines whether an order can be modified based on its current status.
 /// </summary>
-public sealed class OrderModifyablePolicy : IDomainPolicy<Order>
+internal sealed class OrderModifyablePolicy : IDomainPolicy<Order>
 {
     public Result Evaluate(Order candidate)
     {

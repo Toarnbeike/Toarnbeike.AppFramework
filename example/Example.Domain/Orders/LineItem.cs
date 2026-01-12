@@ -16,4 +16,12 @@ public sealed record LineItem(LineItemId Id, Sku Sku, int Quantity, Money UnitPr
     /// Gets the total price for the item, calculated as the unit price multiplied by the quantity.
     /// </summary>
     public Money TotalPrice => new(UnitPrice.Amount * Quantity, UnitPrice.Currency);
+
+    public static LineItem Create(string skuIdentifier, string skuName, int quantity, decimal price, string currency = "EUR")
+    {
+        var unitPrice = new Money(price, currency);
+        var sku = new Sku(skuIdentifier, skuName);
+
+        return new LineItem(LineItemId.New(), sku, quantity, unitPrice);
+    }
 }

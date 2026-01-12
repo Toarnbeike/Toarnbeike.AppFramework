@@ -1,5 +1,11 @@
 <Solution>
   <Folder Name="/docs/" />
+  <Folder Name="/example/">
+    <Project Path="example/Example.Domain/Example.Domain.csproj" Id="48017673-9b4e-4df5-b36a-80d1c446afda" />
+  </Folder>
+  <Folder Name="/example/tests/">
+    <Project Path="example/tests/Example.Domain.Tests/Example.Domain.Tests.csproj" Id="b541b819-6f7b-46ae-940a-5c9e2ce3bfe7" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="CHANGELOG.md" />
@@ -11,5 +17,4 @@
     <Project Path="src/AppFramework.Domain/AppFramework.Domain.csproj" />
   </Folder>
   <Folder Name="/tests/" />
-  <Project Path="example/Example.Domain/Example.Domain.csproj" Id="48017673-9b4e-4df5-b36a-80d1c446afda" />
 </Solution>

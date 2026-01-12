@@ -6,7 +6,7 @@ namespace Toarnbeike.Example.Domain.Orders.Policies;
 /// Represents a domain policy that enforces that all line items within an order have the same currency.
 /// </summary>
 /// <param name="itemToAdd">The line item to be evaluated for correct currency when adding to the order.</param>
-public sealed class LineItemCurrencyPolicy : IDomainPolicy<Order>
+internal sealed class LineItemCurrencyPolicy : IDomainPolicy<Order>
 {
     public Result Evaluate(Order candidate)
     {

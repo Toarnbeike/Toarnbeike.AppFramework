@@ -5,7 +5,7 @@ namespace Toarnbeike.Example.Domain.Orders.Policies;
 /// <summary>
 /// Represents a domain policy that determines whether an order contains at least one line item.
 /// </summary>
-public sealed class OrderNotEmptyPolicy : IDomainPolicy<Order>
+internal sealed class OrderNotEmptyPolicy : IDomainPolicy<Order>
 {
     public Result Evaluate(Order candidate)
     {
