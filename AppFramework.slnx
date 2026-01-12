@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/docs/" />
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="CHANGELOG.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/AppFramework.Domain/AppFramework.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Project Path="example/Example.Domain/Example.Domain.csproj" Id="48017673-9b4e-4df5-b36a-80d1c446afda" />
+</Solution>
